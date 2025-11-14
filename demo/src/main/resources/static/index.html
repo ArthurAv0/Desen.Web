@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sua Marmitex</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar-flutuante">
+    <nav class="container d-flex justify-content-between align-items-center py-3" aria-label="Menu principal">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Marmitas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Landing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+
+        <button id="btnLogin">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+
+        <div id="popupLogin" class="popup-container">
+            <div class="popup">
+                <span class="close-btn">&times;</span>
+                <h2>Entrar</h2>
+                <form>
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu usuário" required>
+
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+
+                    <button type="submit" class="btn-submit">Entrar</button>
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--        <button id="btnLogin">-->
+<!--            <i class="fa-solid fa-right-to-bracket"></i> Login-->
+<!--        </button>-->
+
+<!--        &lt;!&ndash; Pop-up de login &ndash;&gt;-->
+<!--        <div id="popupLogin" class="popup-container">-->
+<!--            <div class="popup">-->
+<!--                <span class="close-btn">&times;</span>-->
+<!--                <h2>Entrar</h2>-->
+<!--                <form>-->
+<!--                    <label for="username">Usuário</label>-->
+<!--                    <input type="text" id="username" placeholder="Digite seu usuário" required>-->
+
+<!--                    <label for="password">Senha</label>-->
+<!--                    <input type="password" id="password" placeholder="Digite sua senha" required>-->
+
+<!--                    <button type="submit" class="btn-submit">Entrar</button>-->
+<!--                    <a href="#" class="forgot-password">Esqueci minha senha</a>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
+
+<main>
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center text-md-start text-light">
+            <div class="h6 text-uppercase fw-bold">NOSSA MARMITEX</div>
+            <h1 class="display-6">
+                <span class="fw-semibold">Seja bem-vindo!</span><br>
+                Aqui temos diversas opções de proteínas, saladas e guarnições para sua marmita.
+            </h1>
+            <p class="lead">
+                Monte sua marmita com combinações deliciosas de proteínas, saladas frescas e acompanhamentos irresistíveis.
+                Comida boa, prática e feita com carinho!
+            </p>
+        </div>
+    </section>
+
+    <!-- Três cards de serviços/áreas -->
+    <section class="bg-servicos" style="background-color: #222;">
+    <div class="container">
+            <div class="row g-3">
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <img src="imagens/salada.jpg" class="card-img-top" alt="Salada">
+                        <div class="card-body">
+                            <h5 class="card-title">Alimentos Saudáveis</h5>
+                            <p class="card-text">Selecionamos ingredientes frescos de fornecedores confiáveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <img src="imagens/sobremesa.avif" class="card-img-top" alt="Sobremesa">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardápio do Seu Jeito</h5>
+                            <p class="card-text">Criação de pratos variados e balanceados para todos os gostos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card h-100">
+                        <img src="imagens/restaurante.jpg" class="card-img-top" alt="Restaurante">
+                        <div class="card-body">
+                            <h5 class="card-title">Espaço de Ponta</h5>
+                            <p class="card-text">Ambiente agradável e refeições preparadas com dedicação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descrição do prato -->
+    <section class="container py-5 prato-executivo">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-success">R$ 20</h2>
+                <h3 class="mt-2">Beef with Ginger</h3>
+                <p>Prato Executivo com Bife Grelhado</p>
+                <p>
+                    Um suculento bife grelhado no ponto perfeito, temperado com ervas frescas e um toque de manteiga de alho,
+                    garantindo aroma irresistível e sabor marcante. Acompanha arroz soltinho, feijão caseiro, batatas fritas e salada.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Leia mais</a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="imagens/beef_ginger.webp" alt="Prato executivo" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel simples de cards (pode ser aprimorado com JS) -->
+    <section class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h4 mb-0">Pratos <small><a href="#">Ver todos</a></small></h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/Nhoque.jpg" class="card-img-top" alt="Nhoque">
+                    <div class="card-body">
+                        <h5 class="card-title">Nhoque de Batata Doce à Bolonhesa</h5>
+                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 19,97</strong></p>
+                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/file_a_pamergiana.avif" class="card-img-top" alt="Filé à parmegiana">
+                    <div class="card-body">
+                        <h5 class="card-title">Filé à Parmegiana</h5>
+                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 18,97</strong></p>
+                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/frango_molho_branco.jpg" class="card-img-top" alt="Filé ao pesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Filé de Frango ao Molho Branco</h5>
+                        <p class="card-text"><small class="text-decoration-line-through">R$ 34,90</small> <strong>R$ 20,97</strong></p>
+                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/strogonoff_frango.png" class="card-img-top" alt="Strogonoff">
+                    <div class="card-body">
+                        <h5 class="card-title">Strogonoff de Frango</h5>
+                        <p class="card-text"><small class="text-decoration-line-through">R$ 25,90</small> <strong>R$ 21,90</strong></p>
+                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+        <small>© Sua Marmitex — Todos os direitos reservados</small>
+    </div>
+</footer>
+
+<!-- Bootstrap JS (opcional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

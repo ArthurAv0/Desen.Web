@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #555555;
+    background-size: cover;
+    background-position: left;
+}
+.bg-servicos {
+    height: 500px; /* ou o valor que quiser */
+    display: flex;
+    align-items: center; /* centraliza o conteúdo verticalmente */
+}
+.hero {
+    width: 100vw;              /* ocupa toda a largura da tela */
+    height: 100vh;             /* ocupa toda a altura da tela */
+    background-image: url("imagens/fundo_principal.jpg");
+    background-size: cover;    /* cobre toda a área, sem distorcer */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+/* Faz a navbar flutuar por cima da imagem */
+.navbar-flutuante {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background: rgba(255, 255, 255, 0.2); /* leve transparência */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+
+/* Remove margens e ajusta layout interno */
+.navbar-flutuante nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Links */
+.navbar-flutuante .nav-link {
+    color: white; /* fica bom se o fundo for escuro */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-flutuante .nav-link:hover {
+    color: #43a047; /* verdinho leve */
+}
+
+/* Botão de login */
+#btnLogin {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnLogin:hover {
+    background-color: #2e7d32;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: flex-end; /* posiciona o pop-up no canto direito */
+    align-items: flex-start;
+    padding: 80px 10%; /* controla a distância do topo e da lateral */
+    z-index: 1000;
+}
+
+/* Caixa do pop-up */
+.popup {
+    background: #fff;
+    border-radius: 12px;
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideIn 0.4s forwards;
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Campos do formulário */
+.popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.popup input:focus {
+    border-color: #43a047;
+}
+
+/* Botão de enviar */
+.btn-submit {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #388e3c;
+}
+
+/* Link "Esqueci minha senha" */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #43a047;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+#btnLogin {
+    background-color: #43a047; /* verde */
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre ícone e texto */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Ícone dentro do botão */
+#btnLogin i {
+    font-size: 18px;
+}
+
+/* Efeitos ao passar o mouse */
+#btnLogin:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+#btnLogin:focus {
+    outline: none;
+}
+
+
+section .text{
+    position: absolute;
+    top: 250px;
+    left: 5%;
+}
+
+section .text .word{
+    color: #cfcfcf;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+section .text h1{
+    font-size: 25px;
+    color: #fff;
+    line-height: 35px;
+}
+
+section .text h1 span{
+    color: orange;
+}
+
+section .text .textarea{
+    width: 600px;
+    margin-top: 20px;
+    color: #cfcfcf;
+    text-align: justify;
+    line-height: 25px;
+}
+
+/second/
+
+.second{
+    width: 100%;
+    height: auto;
+    background: #000000;
+    padding: 50px 0;
+}
+
+.second .img_box{
+    width: 100%;
+    height: 450px;
+    padding: 0 2%;
+    display: flex;
+}
+
+.second .img_box .img_card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.second .img_box .img_card .display_text{
+    width: 450px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 35px;
+    position: absolute;
+}
+
+.second .img_box .img_card .display_text .display_text p{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.second .img_box .img_card img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+.carrossel-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.carrossel {
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    background: #fff;
+    width: 350px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    color: #00332a;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #a8a8a8;
+}
+
+.preco {
+    font-weight: bold;
+    color: #005c46;
+    font-size: 20px;
+}
+
+.btn-add {
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: #0a8040;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #086c36;
+}
+
+/* Bolinhas */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.dot {
+    width: 30px;
+    height: 6px;
+    background: #dcdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.ativo {
+    background: #0a8040;
+}
+
+.prato-executivo{
+    background-color: #222;
+}
+.prato-executivo h2, h3, p, p{
+    color: #fff
+}
