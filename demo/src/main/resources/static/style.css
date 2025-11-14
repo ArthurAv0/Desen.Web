@@ -8,7 +8,7 @@
 section{
     width: 100%;
     height: 100vh;
-    background-color: #555555;
+    background-color: #ffffff;
     background-size: cover;
     background-position: left;
 }
@@ -170,6 +170,10 @@ section{
 .forgot-password:hover {
     text-decoration: underline;
 }
+.Registre-se{
+    text-align: center;
+    color: forestgreen;
+}
 #btnLogin {
     background-color: #43a047; /* verde */
     color: #fff;
@@ -228,6 +232,13 @@ section .text .textarea{
     color: #cfcfcf;
     text-align: justify;
     line-height: 25px;
+}
+.card-text{
+    color: #222222;
+}
+.card-img-top{
+    width: 200px;
+    height: 230px;
 }
 
 /second/
@@ -293,6 +304,26 @@ section .text .textarea{
 
 .carrossel {
     overflow: hidden;
+}
+/* Indicadores estilo "pílula" */
+.carousel-indicators {
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel-indicators button {
+    width: 60px;            /* tamanho horizontal */
+    height: 10px;           /* altura */
+    border-radius: 10px;    /* deixa oval */
+    border: none;
+    background-color: #d3d3d3; /* cinza claro */
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.carousel-indicators .active {
+    background-color: #005c4b; /* verde escuro igual ao da imagem */
+    width: 70px;               /* aumenta quando ativo */
 }
 
 .cards {
@@ -372,4 +403,10 @@ section .text .textarea{
 }
 .prato-executivo h2, h3, p, p{
     color: #fff
+}
+
+.card,
+.card * {
+    outline: none !important;
+    caret-color: transparent !important;
 }

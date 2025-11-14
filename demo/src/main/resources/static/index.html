@@ -22,8 +22,7 @@
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Marmitas</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Landing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Equipe</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
         </ul>
 
@@ -44,35 +43,12 @@
 
                     <button type="submit" class="btn-submit">Entrar</button>
                     <a href="#" class="forgot-password">Esqueci minha senha</a>
+                    <a href="#" class="Registre-se">Não tem conta? Registre-se!</a>
                 </form>
             </div>
         </div>
     </nav>
 </header>
-
-<!--        <button id="btnLogin">-->
-<!--            <i class="fa-solid fa-right-to-bracket"></i> Login-->
-<!--        </button>-->
-
-<!--        &lt;!&ndash; Pop-up de login &ndash;&gt;-->
-<!--        <div id="popupLogin" class="popup-container">-->
-<!--            <div class="popup">-->
-<!--                <span class="close-btn">&times;</span>-->
-<!--                <h2>Entrar</h2>-->
-<!--                <form>-->
-<!--                    <label for="username">Usuário</label>-->
-<!--                    <input type="text" id="username" placeholder="Digite seu usuário" required>-->
-
-<!--                    <label for="password">Senha</label>-->
-<!--                    <input type="password" id="password" placeholder="Digite sua senha" required>-->
-
-<!--                    <button type="submit" class="btn-submit">Entrar</button>-->
-<!--                    <a href="#" class="forgot-password">Esqueci minha senha</a>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--</header>-->
 
 <main>
     <!-- Hero -->
@@ -106,7 +82,7 @@
 
                 <div class="col-sm-4">
                     <div class="card h-100">
-                        <img src="imagens/sobremesa.avif" class="card-img-top" alt="Sobremesa">
+                        <img src="imagens/PF-marmitaria.jpeg" class="card-img-top" alt="Sobremesa">
                         <div class="card-body">
                             <h5 class="card-title">Cardápio do Seu Jeito</h5>
                             <p class="card-text">Criação de pratos variados e balanceados para todos os gostos.</p>
@@ -116,10 +92,10 @@
 
                 <div class="col-sm-4">
                     <div class="card h-100">
-                        <img src="imagens/restaurante.jpg" class="card-img-top" alt="Restaurante">
+                        <img src="imagens/cozinha-marmitaria.jpg" class="card-img-top" alt="Restaurante">
                         <div class="card-body">
                             <h5 class="card-title">Espaço de Ponta</h5>
-                            <p class="card-text">Ambiente agradável e refeições preparadas com dedicação.</p>
+                            <p class="card-text">Ambiente limpo e organizado para sua segurança!</p>
                         </div>
                     </div>
                 </div>
@@ -147,63 +123,221 @@
         </div>
     </section>
 
-    <!-- Carrossel simples de cards (pode ser aprimorado com JS) -->
+<!--    &lt;!&ndash; Carrossel simples de cards (pode ser aprimorado com JS) &ndash;&gt;-->
+<!--    <section class="container py-4">-->
+<!--        <div class="d-flex justify-content-between align-items-center mb-3">-->
+<!--            <h2 class="h4 mb-0">Pratos <small><a href="#">Ver todos</a></small></h2>-->
+<!--        </div>-->
+
+<!--        <div class="row row-cols-1 row-cols-md-4 g-3">-->
+<!--            &lt;!&ndash; Card 1 &ndash;&gt;-->
+<!--            <div class="col">-->
+<!--                <div class="card h-100">-->
+<!--                    <img src="imagens/Nhoque.jpg" class="card-img-top" alt="Nhoque">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Nhoque de Batata Doce à Bolonhesa</h5>-->
+<!--                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 19,97</strong></p>-->
+<!--                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Card 2 &ndash;&gt;-->
+<!--            <div class="col">-->
+<!--                <div class="card h-100">-->
+<!--                    <img src="imagens/file_a_pamergiana.avif" class="card-img-top" alt="Filé à parmegiana">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Filé à Parmegiana</h5>-->
+<!--                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 18,97</strong></p>-->
+<!--                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Card 3 &ndash;&gt;-->
+<!--            <div class="col">-->
+<!--                <div class="card h-100">-->
+<!--                    <img src="imagens/frango_molho_branco.jpg" class="card-img-top" alt="Filé ao pesto">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Filé de Frango ao Molho Branco</h5>-->
+<!--                        <p class="card-text"><small class="text-decoration-line-through">R$ 34,90</small> <strong>R$ 20,97</strong></p>-->
+<!--                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Card 4 &ndash;&gt;-->
+<!--            <div class="col">-->
+<!--                <div class="card h-100">-->
+<!--                    <img src="imagens/strogonoff_frango.png" class="card-img-top" alt="Strogonoff">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Strogonoff de Frango</h5>-->
+<!--                        <p class="card-text"><small class="text-decoration-line-through">R$ 25,90</small> <strong>R$ 21,90</strong></p>-->
+<!--                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+
     <section class="container py-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h2 class="h4 mb-0">Pratos <small><a href="#">Ver todos</a></small></h2>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-4 g-3">
-            <!-- Card 1 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagens/Nhoque.jpg" class="card-img-top" alt="Nhoque">
-                    <div class="card-body">
-                        <h5 class="card-title">Nhoque de Batata Doce à Bolonhesa</h5>
-                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 19,97</strong></p>
-                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+        <!-- Carrossel -->
+        <div id="carrosselPratos" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                    <div class="row g-3">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/Nhoque.jpg" class="card-img-top" alt="Nhoque">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nhoque de Batata Doce à Bolonhesa</h5>
+                                    <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 19,97</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/file_a_pamergiana.avif" class="card-img-top" alt="Filé à parmegiana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filé à Parmegiana</h5>
+                                    <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 18,97</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/frango_molho_branco.jpg" class="card-img-top" alt="Filé ao pesto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filé de Frango ao Molho Branco</h5>
+                                    <p class="card-text"><small class="text-decoration-line-through">R$ 34,90</small> <strong>R$ 20,97</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                    <div class="row g-3">
+
+                        <!-- Card 4 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/strogonoff_frango.png" class="card-img-top" alt="Strogonoff">
+                                <div class="card-body">
+                                    <h5 class="card-title">Strogonoff de Frango</h5>
+                                    <p class="card-text"><small class="text-decoration-line-through">R$ 25,90</small> <strong>R$ 21,90</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card extra 1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/salada.jpg" class="card-img-top" alt="Salada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salada Especial</h5>
+                                    <p class="card-text"><strong>R$ 12,90</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card extra 2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/sobremesa.avif" class="card-img-top" alt="Sobremesa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sobremesa</h5>
+                                    <p class="card-text"><strong>R$ 9,90</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="carousel-item">
+                    <div class="row g-3">
+
+                        <!-- Reutilize ou use pratos diferentes -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/restaurante.jpg" class="card-img-top" alt="Restaurante">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prato Especial 1</h5>
+                                    <p class="card-text"><strong>R$ 29,90</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/Nhoque.jpg" class="card-img-top" alt="Nhoque">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prato Especial 2</h5>
+                                    <p class="card-text"><strong>R$ 19,00</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="imagens/salad.jpg" class="card-img-top" alt="Salada especial">
+                                <div class="card-body">
+                                    <h5 class="card-title">Prato Especial 3</h5>
+                                    <p class="card-text"><strong>R$ 15,50</strong></p>
+                                    <button class="btn btn-sm btn-success" type="button">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselPratos" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrosselPratos" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrosselPratos" data-bs-slide-to="2"></button>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagens/file_a_pamergiana.avif" class="card-img-top" alt="Filé à parmegiana">
-                    <div class="card-body">
-                        <h5 class="card-title">Filé à Parmegiana</h5>
-                        <p class="card-text"><small class="text-decoration-line-through">R$ 23,89</small> <strong>R$ 18,97</strong></p>
-                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Botões de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPratos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
 
-            <!-- Card 3 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagens/frango_molho_branco.jpg" class="card-img-top" alt="Filé ao pesto">
-                    <div class="card-body">
-                        <h5 class="card-title">Filé de Frango ao Molho Branco</h5>
-                        <p class="card-text"><small class="text-decoration-line-through">R$ 34,90</small> <strong>R$ 20,97</strong></p>
-                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselPratos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
 
-            <!-- Card 4 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagens/strogonoff_frango.png" class="card-img-top" alt="Strogonoff">
-                    <div class="card-body">
-                        <h5 class="card-title">Strogonoff de Frango</h5>
-                        <p class="card-text"><small class="text-decoration-line-through">R$ 25,90</small> <strong>R$ 21,90</strong></p>
-                        <button class="btn btn-sm btn-success" type="button">Adicionar</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-</main>
 
 <footer class="bg-light py-4 mt-5">
     <div class="container text-center">
