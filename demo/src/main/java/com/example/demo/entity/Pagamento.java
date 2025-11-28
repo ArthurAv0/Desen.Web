@@ -10,11 +10,11 @@ public class Pagamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Double valor;
     private String metodo; // exemplo: PIX, Cartão, Dinheiro
     private Date dataPagamento;
+    private String status; // Pendente ou Aprovado
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
 

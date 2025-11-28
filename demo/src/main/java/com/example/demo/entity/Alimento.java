@@ -12,20 +12,19 @@ public class Alimento {
     private String nome;
     private String descricao;
     private Double preco;
-
-    @ManyToOne
-    @JoinColumn(name = "aluno_id") // caso o alimento pertença a um aluno (opcional)
-    private Aluno aluno;
+    private img imagem; // ver se imagem é realmente "img"
+    private String categoria;
 
     public Alimento() {
     }
 
-    public Alimento(Long id, String nome, String descricao, Double preco, Aluno aluno) {
+    public Alimento(Long id, String nome, String descricao, Double preco, img imagem, String categoria) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.aluno = aluno;
+        this.imagem = imagem;
+        this.categoria = categoria;
     }
 
     public Long getId() {
@@ -58,13 +57,5 @@ public class Alimento {
 
     public void setPreco(Double preco) {
         this.preco = preco;
-    }
-
-    public Aluno getAluno() {
-        return aluno;
-    }
-
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
     }
 }

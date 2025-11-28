@@ -17,8 +17,8 @@ public class Endereco {
     private String cep;
 
     @OneToOne
-    @JoinColumn(name = "aluno_id")
-    private Aluno aluno;
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
     public Endereco() {
     }

@@ -21,6 +21,9 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<Pedido> pedidos;
 
+    @OneToOne(mappedBy = "usuario")
+    private Endereco endereco;
+
     public Usuario() {
     }
 

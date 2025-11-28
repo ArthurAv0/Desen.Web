@@ -16,15 +16,15 @@ public class Pedido {
     private String status; // Ex.: "PENDENTE", "PAGO", "CANCELADO"
 
     @ManyToOne
-    @JoinColumn(name = "aluno_id")
-    private Aluno aluno;
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
-    private List<Pagamento> pagamentos;
+    @OneToOne(mappedBy = "pedido", cascade = CascadeType.ALL)
+    private Pagamento pagamento;
 
     @ManyToMany
     @JoinTable(
-            name = "pedido_alimento",
+            name = "pedido_alimento", // tirar isso para adicionar classe "PedidoItem"
             joinColumns = @JoinColumn(name = "pedido_id"),
             inverseJoinColumns = @JoinColumn(name = "alimento_id")
     )
